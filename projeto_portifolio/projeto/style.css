@@ -7,7 +7,12 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    height: 200vh;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
 
 nav{
@@ -16,20 +21,20 @@ nav{
     height: 80px; /* Define a altura do menu */
     display: flex; /* Define que agora sera um objeto manipulavel */
     justify-content: flex-end; /* Define que o conteudo ficara justificado no fim */
-    position: fixed;
 }
 
 .menu{
     display: flex; /* Define que agora sera um objeto manipulavel */
-    align-items: center; /* Alinha os itens no centro (em altura) */
     list-style: none; /* Retirar os pontos da lista */
     margin-right: 28px;
+    align-items: center;
 }
 
 .menu a{
     text-decoration: none; /* Retirar a linha padrao dos links */
     color: white;
     padding: 15px; /* Define a distância entre os itens */
+
 }
 
 .menu a:hover{
@@ -39,6 +44,7 @@ nav{
 .main{
     width: 100%;
     height: 120vh;
+    padding-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,18 +55,12 @@ nav{
 
 .tituloMain h1{
     color: white;
-    margin-left: 50px;
-    margin-bottom: 10px;
+    padding-bottom: 0.5%;
 }
 
 .tituloMain p{
     color: rgb(68, 68, 255);
-    margin-left: 50px;
-}
-
-.botao{
-    margin-left: 50px;
-    margin-top: 20px;
+    padding-bottom: 1.5%;
 }
 
 .botao button{
@@ -75,4 +75,33 @@ nav{
 
 .botao button:hover{
     transform: scale(1.1);
+}
+
+.sobre{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.sobre h2{
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.sobre div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.sobre img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
 }
