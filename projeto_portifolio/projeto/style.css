@@ -183,3 +183,30 @@ footer a{
 footer p{
     padding-left: 10px;
 }
+
+@media(max-width: 990px){
+    
+    nav{
+        justify-content: center;
+    }
+
+   .sobre{
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0;
+    padding-top: 80px;
+   }
+
+   .sobre div{
+    padding: 0;
+    padding-bottom: 40px;
+   }
+
+   .imagens1 img{
+    width: 30%;
+   }
+
+   .orcamento{
+    padding-top: 30px;
+   }
+}
